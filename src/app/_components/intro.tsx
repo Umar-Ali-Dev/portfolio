@@ -2,20 +2,40 @@ import { CMS_NAME } from "@/lib/constants";
 
 export function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using{" "}
-        <a
-          href="https://nextjs.org/"
-          className="underline hover:text-blue-600 duration-200 transition-colors"
-        >
-          Next.js
-        </a>{" "}
-        and {CMS_NAME}.
-      </h4>
+    <section className="header d-flex align-items-center sticky-top">
+      <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <div className=" logo d-flex align-items-center">
+           <h1 className="sitename">DevFolio</h1>
+        </div>
+        <nav id="navmenu" className="navmenu">
+          <ul>
+            <li><a href="#hero" className="active">Home </a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li className="dropdown"><a href="#"><span>Dropdown</span> 
+            {/* <i className="bi bi-chevron-down toggle-dropdown"></i> */}
+            </a>
+              {/* <ul className="">
+                <li><a href="#">Dropdown 1</a></li>
+                <li className="dropdown"><a href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul> */}
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
   );
 }

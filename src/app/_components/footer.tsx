@@ -3,29 +3,25 @@ import { EXAMPLE_PATH } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
-      <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
-          </div>
-        </div>
-      </Container>
-    </footer>
+    <div id="footer" className="footer accent-background fixed bottom-0 left-0 w-full z-10 -mb-[120px]">
+
+    <div className="container">
+      <div className="copyright text-center ">
+        <p>© <span>Copyright</span> <strong className="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div className="social-links d-flex justify-content-center">
+        <a href=""><i className="bi bi-twitter-x"></i></a>
+        <a href=""><i className="bi bi-facebook"></i></a>
+        <a href=""><i className="bi bi-instagram"></i></a>
+        <a href=""><i className="bi bi-linkedin"></i></a>
+      </div>
+      <div className="credits">
+         
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </div>
   );
 }
 
