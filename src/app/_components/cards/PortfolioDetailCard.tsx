@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { StaticImageData } from "next/image";
 
 interface ImageData {
   src: any;
@@ -14,7 +15,7 @@ interface ImageData {
 }
 
 interface PropData {
-  carouselImage?: string[];
+  carouselImage?: StaticImageData[];
   detailTitle?: string;
   detailDescription?: string;
   bgColor?: string;
