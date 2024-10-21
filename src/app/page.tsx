@@ -13,6 +13,7 @@ import Faq from "./_components/faq";
 import Contact from "./_components/contact";
 import Footer from "./_components/footer";
 import Aos from "@/app/_components/aos";
+import Testimonial from "./_components/testimonial";
 
 
 export default function Index() {
@@ -27,7 +28,6 @@ export default function Index() {
     <main>
       <Container>
         <Aos/>
-        <Intro />
         <HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
@@ -41,8 +41,9 @@ export default function Index() {
         <Service/>
         <Stats/>
         <Portfolio/>
-        <Pricing/>
-        <Faq/>
+        {/* <Pricing/> */}
+        {/* <Faq/> */}
+        <Testimonial/>
         <Contact/>
 
       </Container>

@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import "./globals.css";
+import { Intro } from "./_components/intro";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-full p-0 m-0 overflow-x-hidden">
+      <Intro />
         
          {children}
         <Footer />

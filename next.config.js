@@ -4,7 +4,7 @@
 const isProd = process.env.MODE_ENV === "production"
 const nextConfig = {
     basePath: isProd ? "/nextjs-blog-deployment" : "",
-    output: 'export',
+    // output: 'export',
      images: 
         { unoptimized: true }
    
