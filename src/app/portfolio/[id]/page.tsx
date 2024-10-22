@@ -35,4 +35,10 @@ const page = ({ params }: portfolioId) => {
   );
 };
 
+export const generateStaticParams = async () => {
+  return portfolio.map((item) => ({
+    id: item.id.toString(),
+  }));
+};
+
 export default page;
