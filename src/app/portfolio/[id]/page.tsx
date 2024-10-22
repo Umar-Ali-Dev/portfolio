@@ -12,10 +12,6 @@ interface portfolioId {
 const page = ({ params }: portfolioId) => {
   const portfolioId = parseInt(params.id, 10);
 
-  const portfolioCardNo = portfolio.find(
-    (service) => service.id === portfolioId
-  );
-
   const portfolioData = portfolioDetail.find(
     (detail) => detail.id === portfolioId
   );
@@ -33,6 +29,12 @@ const page = ({ params }: portfolioId) => {
       />
     </div>
   );
+};
+
+export const generateStaticParams = async () => {
+  return portfolio.map((item) => ({
+    id: item.id.toString(),
+  }));
 };
 
 export default page;
